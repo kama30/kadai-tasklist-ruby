@@ -39,7 +39,7 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     flash[:notice] = "タスクを削除しました！"
-    redirect_back(fallback_location: root_path)
+    redirect_to root_path
   end
   
   private
